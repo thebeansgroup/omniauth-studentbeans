@@ -35,6 +35,14 @@ module OmniAuth
         @raw_info ||= access_token.get('/api/v1/me.json').parsed || {}
       end
 
+      def request_phase
+        redirect client.auth_code.authorize_url({
+          redirect_uri: callback_url,
+          source:       request.params['source'],
+          country:      request.params['country']
+        }.merge(options.authorize_params))
+      end
+
       private
 
       def prune!(hash)
