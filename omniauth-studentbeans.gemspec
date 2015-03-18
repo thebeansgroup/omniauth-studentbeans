@@ -6,8 +6,8 @@ require 'omniauth/studentbeans/version'
 Gem::Specification.new do |spec|
   spec.name          = 'omniauth-studentbeans'
   spec.version       = OmniAuth::Studentbeans::VERSION
-  spec.authors       = ['The Beans Group']
-  spec.email         = ['developers@thebeansgroup.com']
+  spec.authors       = ['Seren Altiner', 'Vincent Siebert']
+  spec.email         = ['seren@thebeansgroup.com', 'vincent@siebert.im']
   spec.summary       = 'Student Beans OAuth2 strategy for OmniAuth'
   spec.homepage      = 'https://github.com/thebeansgroup/omniauth-studentbeans'
   spec.license       = 'MIT'
