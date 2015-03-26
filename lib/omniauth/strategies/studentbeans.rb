@@ -5,7 +5,7 @@ module OmniAuth
     class Studentbeans < OmniAuth::Strategies::OAuth2
       option :client_options, {
         site:          'https://www.studentbeans.com',
-        authorize_url: '/verge/authorize',
+        authorize_url: '/id/oauth/authorize',
         token_url:     '/oauth/token'
       }
 
