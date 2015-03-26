@@ -5,7 +5,7 @@ module OmniAuth
     class Studentbeans < OmniAuth::Strategies::OAuth2
       option :client_options, {
         site:          'https://www.studentbeans.com',
-        authorize_url: '/verge/authorize',
+        authorize_url: '/id/oauth/authorize',
         token_url:     '/oauth/token'
       }
 
@@ -19,6 +19,7 @@ module OmniAuth
           'email'            => raw_info['email'],
           'first_name'       => profile_info['first_name'],
           'last_name'        => profile_info['last_name'],
+          'country'          => profile_info['country'],
           'university'       => student_verification_info['university'],
           'university_email' => student_verification_info['email'],
           'status'           => student_verification_info['status']
