@@ -19,11 +19,13 @@ module OmniAuth
           'email'            => raw_info['email'],
           'first_name'       => profile_info['first_name'],
           'last_name'        => profile_info['last_name'],
+          'avatar'           => profile_info['avatar'],
           'country'          => profile_info['country'],
           'id_code'          => profile_info['id_code'],
           'university'       => student_verification_info['university'],
           'university_email' => student_verification_info['email'],
-          'status'           => student_verification_info['status']
+          'status'           => student_verification_info['status'],
+          'expires_in'       => student_verification_info['expires_in']
         })
       end
 

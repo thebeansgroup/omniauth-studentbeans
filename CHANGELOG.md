@@ -1,4 +1,5 @@
 ## Next
+- Adding avatar and verification expiry date to info
 
 ## 0.0.2
 - Adding iD code to info
