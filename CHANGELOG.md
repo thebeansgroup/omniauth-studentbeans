@@ -1,4 +1,5 @@
 ## Next
+- Locking omniauth-oauth2 to 1.3.1
 
 ## 0.1.0
 - Adding avatar and verification expiry date to info
